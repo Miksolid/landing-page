@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formlabs Fuse 1+ | Landing Page</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
+    .container { max-width: 1100px; margin: 40px auto; background: #fff; border-radius: 20px; box-shadow: 0 10px 50px rgba(0,0,0,0.1); overflow: hidden; }
+    header, section, footer { padding: 60px 40px; text-align: center; }
+    header { background: #000; color: #fff; border-bottom: 4px solid #FF833E; }
+    header img.logo { height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1); }
+    h1 { font-size: 2.8em; font-weight: 600; margin-bottom: 20px; letter-spacing: -1px; }
+    h2 { font-size: 2em; font-weight: 500; margin-bottom: 20px; }
+    p { line-height: 1.6; margin-bottom: 20px; font-size: 1.1em; color: #444; }
+    .hero-sub { color: #fff; font-size: 1.2em; margin-bottom: 20px; }
+    .btn { display: inline-block; background: #FF833E; color: #fff; padding: 14px 36px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1em; transition: all 0.3s ease; margin-top: 15px; }
+    .btn:hover { background: #e66f27; transform: translateY(-2px); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+    .card { background: #f9f9f9; border-radius: 16px; padding: 30px 20px; box-shadow: 0 6px 25px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { font-size: 1.3em; margin-bottom: 10px; color: #111; }
+    .logos { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+    .logos img { height: 50px; opacity: 0.9; filter: grayscale(100%); transition: all 0.3s ease; }
+    .logos img:hover { opacity: 1; filter: grayscale(0%); }
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+    input, textarea { padding: 14px; border: 1px solid #ccc; border-radius: 12px; font-size: 1em; background: #fff; color: #111; transition: border 0.3s ease; }
+    input:focus, textarea:focus { outline: none; border-color: #FF833E; }
+    button { background: #FF833E; color: #fff; padding: 14px; border-radius: 30px; border: none; font-size: 1em; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+    button:hover { background: #e66f27; transform: translateY(-2px); }
+    footer { font-size: 0.9em; color: #fff; border-top: 1px solid #222; padding: 30px; background: #000; }
+    .highlight { font-size: 1.2em; font-weight: bold; background: #000; padding: 12px 20px; border-radius: 10px; display: inline-block; margin-top: 15px; color: #FF833E; }
+    .icon { font-size: 2em; display: block; margin-bottom: 10px; color: #FF833E; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <header>
+      <img src="logo-formlabs.png" alt="Formlabs Logo" class="logo">
+      <h1>Producción SLS industrial al alcance de tu negocio</h1>
+      <p class="hero-sub">La impresora 3D Fuse 1+ 30W de Formlabs: 40% más económica que la competencia, utilizada por Microsoft, NASA y Ford.</p>
+      <a href="#formulario" class="btn">Quiero mi Demo Gratuita</a>
+    </header>
+
+    <!-- Beneficios -->
+    <section>
+      <h2>Beneficios Clave</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>40% más económica</h3>
+          <p>Reduce tu inversión inicial y maximiza el retorno.</p>
+        </div>
+        <div class="card">
+          <h3>Producción ágil</h3>
+          <p>Hasta 70% más rápido, con menos tiempos muertos.</p>
+        </div>
+        <div class="card">
+          <h3>Confianza validada</h3>
+          <p>Empresas líderes ya producen con Formlabs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prueba Social -->
+    <section>
+      <h2>Empresas que confían en Fuse 1+</h2>
+      <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" alt="Ford">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Audi_logo_detail.svg" alt="Audi">
+      </div>
+      <p style="text-align:center; margin-top:20px; font-size:1.05em;">Más de 10,000 empresas en todo el mundo ya producen con Fuse 1+.</p>
+    </section>
+
+    <!-- Oferta + Formulario -->
+    <section id="formulario">
+      <h2>Solicita tu Demo Gratuita</h2>
+      <p class="highlight">🎁 Ebook exclusivo incluido: <strong>Cómo reducir costes de producción con SLS en 2025</strong></p>
+      <form>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="empresa" placeholder="Empresa" required>
+        <textarea name="mensaje" placeholder="Mensaje (opcional)" rows="4"></textarea>
+        <button type="submit">Solicitar Demo</button>
+      </form>
+      <p style="text-align:center; font-size:0.9em; margin-top:10px; color:#777;">Plazas limitadas: solo 20 demos disponibles este mes.</p>
+    </section>
+
+    <!-- Garantías & Storytelling -->
+    <section>
+      <h2>¿Por qué Formlabs?</h2>
+      <p style="max-width:700px; margin:auto;">Formlabs nació con una misión: democratizar la fabricación avanzada. Con la Fuse 1+, cualquier empresa puede acceder a la misma tecnología que usan los gigantes de la industria, sin costes prohibitivos.</p>
+      <div class="grid" style="margin-top:30px;">
+        <div class="card">
+          <span class="icon">💹</span>
+          <h3>ROI en menos de un año</h3>
+        </div>
+        <div class="card">
+          <span class="icon">🌍</span>
+          <h3>Soporte Global</h3>
+        </div>
+        <div class="card">
+          <span class="icon">💳</span>
+          <h3>Financiación Flexible</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Formlabs Landing Demo. Todos los derechos reservados.
+    </footer>
+  </div>
+</body>
+</html>
